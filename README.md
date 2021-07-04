@@ -47,6 +47,7 @@ security.mac.biba.trust_all_interfaces=1
 ```
 :label=biba/high(high-high):\
 ```
+<br><br>
 
 The whole ```"default"``` section should look like this now:
 
