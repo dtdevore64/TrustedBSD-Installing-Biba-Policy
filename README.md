@@ -16,6 +16,8 @@ Biba Read rule: A subject with an integrity-clearance level of "low" may only re
 
 <br><br>
 
+Biba Summary: ```"No write up, no read down"```<br><br>
+
 
 ***Step 1.*** Install FreeBSD and make sure to install the UFS filesystem option
 <br><br><br><br>
