@@ -4,11 +4,11 @@
 What is Biba? Biba is a Multi-Level Security(MLS) policy model for protecting integrity. Integrity clearances of subjects and integrity classifications of objects can be different from their confidentiality clearances and classifications. For example, a highly confidential document classified as Top Secret for confidentiality may come from sources that may not have been fully vetted, and hence the document may only have an integrity classification of C or U. An example below explains the Biba rules more closely.
 <br><br>
 
-Biba Write rule: A subject A with integrity-clearance leverl I(A) may only have write access to objects classified at that integrity level or lower.
-<br>```"Subject A may write object B if I(A) >= I(B)"```
+Biba Write rule: A subject with an integrity-clearance level of "low" may only have write access to objects classified at that integrity level of "low" or lower.
+<br>```"Subject John has a biba level/range of low can only write to objects with the integrity level/range of low or lower"```
 
-Biba Read rule: A subject A may only read objects classified at his integrity level or higher:
-```"Subject A may read object B if I(A) <= I(B)"```
+Biba Read rule: A subject with an integrity-clearance level/range of high can only have read access to objects classified at that integrity level only.
+```"Subject John has a biba level/range of high can only read to objects with the integrity level/range of high. John cannot read to anything lower than the level of "high""```
 
 <br><br>
 
