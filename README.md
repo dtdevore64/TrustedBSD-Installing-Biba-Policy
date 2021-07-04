@@ -17,7 +17,7 @@ security.mac.biba.trust_all_interfaces=1
 ***Step 3.*** Edit the ```"/etc/fstab"``` and set the root partition to ```"ro"``` and then reboot.
 <br><br><br><br>
 
-***Step 4.*** Run tunefs -l enable /  and reboot after
+***Step 4.*** Run ```tunefs -l enable /```  and reboot after
 <br><br><br><br>
 
 ***Step 5.*** As the root user run ```mount -urw /``` and change the ```"ro"``` back to ```"rw"``` in the /etc/fstab and then reboot again.
