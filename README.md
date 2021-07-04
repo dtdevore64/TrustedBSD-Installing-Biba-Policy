@@ -8,7 +8,7 @@ Biba Write rule: A subject with an integrity-clearance level of "low" may only h
 <br>```"Subject John has a biba level/range of low can only write to objects with the integrity level/range of low or lower"```
 
 Biba Read rule: A subject with an integrity-clearance level/range of high can only have read access to objects classified at that integrity level only.<br><br>
-```"Subject John has a biba level/range of high can only read to objects with the integrity level/range of high. John cannot read to anything lower than the level of "high""```
+```"Subject John has a biba level/range of high can only read to objects with the integrity level/range of high. John cannot read to anything lower than the level of "high""```<br><br>
 
 <br><br>
 
