@@ -1,6 +1,15 @@
 # **TrustedBSD-Installing-Biba-Policy**
 <br><br>
 
+What is Biba? Biba is a Multi-Level Security(MLS) policy model for protecting integrity. Integrity clearances of subjects and integrity classifications of objects can be different from their confidentiality clearances and classifications. For example, a highly confidential document classified as Top Secret for confidentiality may come from sources that may not have been fully vetted, and hence the document may only have an integrity classification of C or U. An example below explains the Biba rules more closely.
+<br><br>
+
+Biba Write rule: A subject A with integrity-clearance leverl I(A) may only have write access to objects classified at that integrity level or lower.
+```"Subject A may write object B if I(A) >= I(B)"```
+
+Biba Read rule: A subject A may only read objects classified at his integrity level or higher:
+```"Subject A may read object B if I(A) <= I(B)"```
+
 
 ***Step 1.*** Install FreeBSD and make sure to install the UFS filesystem option
 <br><br><br><br>
