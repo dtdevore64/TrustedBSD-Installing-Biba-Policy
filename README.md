@@ -3,6 +3,7 @@
 
 
 ***Step 1.*** Install FreeBSD and make sure to install the UFS filesystem option
+<br><br>
 
 
 ***Step 2.*** Open up the ```"/boot/loader.conf"``` file and put these in there:
@@ -11,16 +12,16 @@ mac_biba_load="YES"
 security.mac.biba.trust_all_interfaces=1
 
 ```
-
+<br><br>
 
 ***Step 3.*** Edit the ```"/etc/fstab"``` and set the root partition to ```"ro"``` and then reboot.
-
+<br><br>
 
 ***Step 4.*** Run tunefs -l enable /  and reboot after
-
+<br><br>
 
 ***Step 5.*** As the root user run ```mount -urw /``` and change the ```"ro"``` back to ```"rw"``` in the /etc/fstab and then reboot again.
-
+<br><br>
 
 ***Step 6.*** Edit the ```"/etc/login.conf"``` towards the top for our default user and make sure it looks like this below. The line we are specifically adding to this file is this
 
@@ -59,7 +60,7 @@ default:\
 	:lang=C.UTF-8:
   
   ```
-  
+  <br><br>
   
   ***Step 7.*** Continue to edit the ```"/etc/login.conf"``` file and scroll all the way to the bottom and add ```"myuser"``` like so:
   
@@ -69,7 +70,7 @@ default:\
 	:tc=default:
   
   ```
-  
+  <br><br>
   
   ***Step 8.*** Once you are done editing the ```"/etc/login.conf"``` file we will now map our users to the users in the file. First we will map our regular user named ```'john'``` to our ```'myuser'``` in the file like so:
   
@@ -81,7 +82,7 @@ pw usermod john -L myuser
 
 By doing this our user John whenever he logs into the system will have a clearance of ```"biba/low(low-high)"```
 
-
+<br><br>
 ***Step 9.*** Now we will map our root user to the default user in ```"/etc/login.conf"``` like so:
 
 ```
@@ -90,3 +91,4 @@ pw usermod root -L default
 
 
 By doing this our root user whenever he logs into the system will have a clearance of ```"biba/high(high-high)"```
+<br><br>
