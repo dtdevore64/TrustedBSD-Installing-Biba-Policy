@@ -181,7 +181,7 @@ biba/high
 Reason being is that since our user ```john``` has a label of ```biba/low(low-high)``` the root user can't read into his directory. Even if john changes the label of his ```mytest2``` file to ```biba/high``` the root user still will not be allowed access to view the contents of ```/home/john``` because the root user doesn't have an integrity level of ```low``` at all in their name. Their integrity level/label is ```biba/high(high-high)```.
 
 <br><br>
-Remember our 'no read down' rule that our Biba policy has. Subject John cannot have a biba level of high and read down to any objects with integreity levels below his.
+Remember our ```no read down``` rule that our Biba policy has. Subject John cannot have a biba level of high and read down to any objects with integreity levels below his.
 
 
 
