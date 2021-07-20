@@ -160,8 +160,7 @@ As you can see it won't let us write to the file. You can also open up the file 
 touch mytest2
 echo "This is another test!" >> mytest2
 ```
-
-
+<br><br>
 Log back out and log in as root. Change into the /home/john directory and you will be denied.
 
 ```
