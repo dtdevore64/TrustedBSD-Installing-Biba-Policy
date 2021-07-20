@@ -121,6 +121,8 @@ getpmac
 biba/low(low-high)
 ```
 
+<br><br>
+
 Biba Policy states that our regular user john should not be able to write to integrity levels higher than his. To test this let us log out and log back in as the root user. Our label should now be "biba/high(high-high)". To test this run the following command:
 
 ```
